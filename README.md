@@ -27,10 +27,14 @@ A low-resolution image is upscaled into a high-resolution output using PyTorch.
 # 3. How to Run
 
 #3.1 Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 #3.2 Run the inference script
+```bash
 python run_esrgan.py
+```
 
 Output
 The result will be saved as output.png in the same directory.
@@ -39,16 +43,16 @@ The result will be saved as output.png in the same directory.
 # 4. Model Description
 
 Real-ESRGAN restores details using:
-Residual-in-Residual Dense Blocks (RRDB)
-Generative Adversarial Training
-Robust to real-world compressed images, noise, blur, low-quality inputs
-The model used here (x4plus) is designed for ×4 super-resolution.
+- Residual-in-Residual Dense Blocks (RRDB)
+- Generative Adversarial Training
+- Robust to real-world compressed images, noise, blur, low-quality inputs
+- The model used here (x4plus) is designed for ×4 super-resolution.
 
 ---
  # 5. Results
 Example input/output:
-Input: low-resolution (low.jpg)
-Output: high-resolution (output.png)
+- Input: low-resolution (low.jpg)
+- Output: high-resolution (output.png)
 (Include images if needed)
 
 ---
@@ -62,6 +66,8 @@ Generated sample output
 ---
 # 7. How to Package (for final submission)
 Zip all files except weight and large images:
+```bash
 EF2039_Proj01_<YourID>_<Name>.zip
+```
 
 ---
