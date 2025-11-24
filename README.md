@@ -23,8 +23,27 @@ A low-resolution image is upscaled into a high-resolution output using PyTorch.
 - `output.png` — Output super-resolution result
 
 ---
+# 3. Environment
+- Python 3.10
+- PyTorch 2.1
+- CUDA 12.2
+- torchvision, torchaudio (NGC PyTorch 23.09)
 
-# 3. How to Run
+---
+# 4. requirement
+torch==2.1.0
+torchvision
+torchaudio
+opencv-python
+basicsr
+realesrgan
+scipy
+tqdm
+numpy
+Pillow
+
+---
+# 5. How to Run
 
 #3.1 Install dependencies
 ```bash
@@ -40,7 +59,7 @@ Output
 The result will be saved as output.png in the same directory.
 
 ---
-# 4. Model Description
+# 6. Model Description
 
 Real-ESRGAN restores details using:
 - Residual-in-Residual Dense Blocks (RRDB)
@@ -49,14 +68,14 @@ Real-ESRGAN restores details using:
 - The model used here (x4plus) is designed for ×4 super-resolution.
 
 ---
- # 5. Results
+ # 7. Results
 Example input/output:
 - Input: low-resolution (low.jpg)
 - Output: high-resolution (output.png)
 (Include images if needed)
 
 ---
-# 6. Development Process
+# 8. Development Process
 This repository includes:
 Commit history of development
 Raw model source code
@@ -64,10 +83,9 @@ Inference script
 Generated sample output
 
 ---
-# 7. How to Package (for final submission)
+# 9. How to Package (for final submission)
 Zip all files except weight and large images:
 ```bash
 EF2039_Proj01_<YourID>_<Name>.zip
 ```
 
----
